@@ -1,0 +1,80 @@
+^\::
+start:
+CoordMode, Mouse ,screen
+
+MouseClick, left, 1800, 10
+send, {Down}
+send, {Tab 2}
+Send, y
+send, {lshift down}{Tab 2}{lshift up}
+send, ^{c}
+MouseClick, left, 500, 10
+sleep 200
+send, ^{f}
+send, +{Home}
+send, {Backspace}
+send, +{End}
+send, {Backspace}
+send, ^{v}
+sleep 250
+MouseClick, left, 16, 948
+sleep 100
+Goto start
+
+return
+
+MouseClick, left, 660, 970
+SLEEP 200
+send, {Tab}
+send, {Space}
+sleep 2500
+send, {DOWN 22}{Tab}
+send, {E}{Tab 6}
+send, {=}{Tab}
+send, {Space}
+sleep 1000
+send, {tab}
+send, Batch Generation - Client Closedown
+send, {tab}
+									
+
+
+return
+
+
+MouseClick, left, 16, 323
+sleep 500
+MouseClick, left, 16, 323
+sleep 300
+
+^q::
+
+CoordMode, Mouse ,screen
+sleep 200
+send, {DOWN 22}{Tab}
+send, {E}{Tab 6}
+send, {=}{Tab}
+send, {Space}
+sleep 1000
+send, {tab}
+send, Batch Generation - Client Closedown
+send, {tab}
+
+
+return
+
+
+send, {right 3}{lshift down}{right 15}{lshift up}{lctrl down}{c}{lctrl up}{lshift up}
+MouseClick, left, 1700, 175
+MouseClick, left, 1700, 175
+send, {lctrl down}{v}{lctrl up}{enter}
+sleep 5500
+send, {lctrl down}{lalt down}{c}{lalt up}{lctrl up}
+sleep 1000
+send, {tab}{enter}
+sleep 4000
+goto start
+
+Esc::ExitApp
+
+Mousemove, 1535, 65
