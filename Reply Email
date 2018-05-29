@@ -1,0 +1,28 @@
+^w::
+	sleep 100
+	send, {lalt down}{H}{R}{p}{lalt up}
+	send, {lshift down}{tab 4}{lshift up}
+	send, {lshift down}{Home}{lshift up}{Backspace}
+	Send, IT <it@pharsafer.com>; Drug Safety <drugsafety@pharsafer.com>;
+	Send {Tab 4}
+	if (A_Hour < 12)
+		{
+	Send, Good Morning All
+		}   
+	else {
+	Send, Good Afternoon All
+		}
+	Send {Enter 2}
+	Send, Just to confirm deletion of this case
+	Send {Enter 2}
+	Send, Regards and Thanks
+	Send {Enter}
+	Send, {LAlt Down}{Lshift Down}{N}{Lshift Up}{LAlt Up}
+	Send, {a}{s}
+	Send {Enter}
+
+   
+Return
+
+Esc::ExitApp
+Return	
